@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Obstacle index{% endblock %}
+
+{% block body %}
+    <h1>Obstacle index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Photo</th>
+                <th>TypeObstacle</th>
+                <th>Echec</th>
+                <th>TempsPassage</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for obstacle in obstacles %}
+            <tr>
+                <td>{{ obstacle.id }}</td>
+                <td>{{ obstacle.nom }}</td>
+                <td>{{ obstacle.photo }}</td>
+                <td>{{ obstacle.typeObstacle }}</td>
+                <td>{{ obstacle.echec }}</td>
+                <td>{{ obstacle.tempsPassage ? obstacle.tempsPassage|date('H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('obstacle_show', {'id': obstacle.id}) }}">show</a>
+                    <a href="{{ path('obstacle_edit', {'id': obstacle.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('obstacle_new') }}">Create new</a>
+{% endblock %}

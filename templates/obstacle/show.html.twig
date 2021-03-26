@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Obstacle{% endblock %}
+
+{% block body %}
+    <h1>Obstacle</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ obstacle.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ obstacle.nom }}</td>
+            </tr>
+            <tr>
+                <th>Photo</th>
+                <td>{{ obstacle.photo }}</td>
+            </tr>
+            <tr>
+                <th>TypeObstacle</th>
+                <td>{{ obstacle.typeObstacle }}</td>
+            </tr>
+            <tr>
+                <th>Echec</th>
+                <td>{{ obstacle.echec }}</td>
+            </tr>
+            <tr>
+                <th>TempsPassage</th>
+                <td>{{ obstacle.tempsPassage ? obstacle.tempsPassage|date('H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('obstacle_index') }}">back to list</a>
+
+    <a href="{{ path('obstacle_edit', {'id': obstacle.id}) }}">edit</a>
+
+    {{ include('obstacle/_delete_form.html.twig') }}
+{% endblock %}

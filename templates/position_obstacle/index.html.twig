@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}PositionObstacle index{% endblock %}
+
+{% block body %}
+    <h1>PositionObstacle index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Position</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for position_obstacle in position_obstacles %}
+            <tr>
+                <td>{{ position_obstacle.id }}</td>
+                <td>{{ position_obstacle.position }}</td>
+                <td>
+                    <a href="{{ path('position_obstacle_show', {'id': position_obstacle.id}) }}">show</a>
+                    <a href="{{ path('position_obstacle_edit', {'id': position_obstacle.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('position_obstacle_new') }}">Create new</a>
+{% endblock %}
