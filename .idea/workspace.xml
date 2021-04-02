@@ -19,15 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06869bbc-3f9f-4e79-8103-a8d0caeb36de" name="Default Changelist" comment="ok">
-      <change afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PPE4_Thalia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PPE4_Thalia.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="06869bbc-3f9f-4e79-8103-a8d0caeb36de" name="Default Changelist" comment="home ok">
+      <change afterPath="$PROJECT_DIR$/src/Controller/ReservationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ResultatController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/reservation/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/resultat/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,11 +124,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/resultat" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Thalia\PPE4_Thalia\templates\resultat" />
+      <recent name="D:\Thalia\PPE4_Thalia\templates\reservation" />
       <recent name="D:\Thalia\PPE4_Thalia\templates\home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -147,7 +149,8 @@
       <updated>1616770677181</updated>
       <workItem from="1616770678218" duration="2261000" />
       <workItem from="1617366114175" duration="40000" />
-      <workItem from="1617366281696" duration="2291000" />
+      <workItem from="1617366281696" duration="7034000" />
+      <workItem from="1617375167528" duration="91000" />
     </task>
     <task id="LOCAL-00001" summary="crud">
       <created>1616770841277</created>
@@ -163,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616775787166</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="home ok">
+      <created>1617368640330</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617368640330</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,9 +194,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="crud" />
     <MESSAGE value="ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+    <MESSAGE value="home ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="home ok" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2636" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617374043767">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2636" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617374043767" />
+    <state x="2728" y="306" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617373147846">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2728" y="306" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617373147846" />
     <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617368330480">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -195,17 +214,21 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617366146522" />
-    <state x="2683" y="243" key="NewPhpClassDialog" timestamp="1617367701312">
+    <state x="2683" y="243" key="NewPhpClassDialog" timestamp="1617373117329">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2683" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617367701312" />
+    <state x="2683" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617373117329" />
     <state x="2714" y="443" key="NewPhpFileDialog" timestamp="1617367176263">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2714" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617367176263" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1616775801734">
+    <state x="2381" y="165" key="SettingsEditor" timestamp="1617375148884">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616775801734" />
+    <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617375148884" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617368652469">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617368652469" />
   </component>
 </project>
