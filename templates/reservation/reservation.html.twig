@@ -1,0 +1,48 @@
+{% extends ':reservation:index.html.twig' %}
+
+{% block title %}Resultat{% endblock %}
+
+{% block body %}
+<h3 align="center">Obstacle 1</h3>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <h5><label for="nom">Nom de l'obstacle</label></h5>
+                <select id="nom" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <h5><label for="photo">Photo</label></h5>
+                <img src="" id="photo" style="border:solid 2px #000000;" />
+            </div>
+        </div>
+        <div class="form-group">
+            <h5><label for="type">Type d'obstacle</label></h5>
+            <input type="text" class="form-control" id="type" disabled="disabled">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <h5><label for="descriptif">Description de l'obstacle</label></h5>
+                <textarea id="descriptif" cols="50" rows="2" disabled="disabled"></textarea>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <h5><label for="position">Position de l'obstacle</label></h5>
+                <input type="number" class="form-control" id="position">
+            </div>
+            <div class="form-group col-md-6">
+                <h5><label for="choisi">Obstacles déjà choisis</label></h5>
+                <select id="choisi" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Modifier</button>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Valider</button>
+        <button type="submit" class="btn btn-primary">Annuler</button>
+    </form>
+{% endblock %}

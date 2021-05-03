@@ -1,7 +1,45 @@
-{% extends 'base.html.twig' %}
+{% extends ':resultat:index.html.twig' %}
 
 {% block title %}Resultat{% endblock %}
 
 {% block body %}
-
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <h5><label for="salle">Salle</label></h5>
+                <input type="text" name="salle" value="salle" disabled="disabled" />
+            </div>
+            <div class="form-group col-md-6">
+                <h5><label for="theme">Thème</label></h5>
+                <input type="text" name="theme" value="theme" disabled="disabled" />
+            </div>
+        </div>
+        <div class="form-group">
+            <h5><label for="horaire">Créneau</label></h5>
+            <input type="datetime-local" class="form-control" id="horaire" disabled="disabled">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <h5><label for="nbjoueur">Obstacles de la partie</label></h5>
+                <select id="obstacle" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <h5><label for="tempspassage">Temps de passage de l'obstacle</label></h5>
+                <input type="number" class="form-control" id="tempspassage"> min
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <h5><label for="echec">Echec</label></h5>
+                <input type="text" class="form-control" id="echec" disabled="disabled">
+            </div>
+            <div class="form-group col-md-6">
+                <h5><label for="nbechec">Nombre d'échec</label></h5>
+                <input type="number" class="form-control" id="nbechec" disabled="disabled">
+            </div>
+        </div>
+    </form>
 {% endblock %}
