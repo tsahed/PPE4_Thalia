@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Themes;
 use App\Form\ThemesType;
+use App\Repository\ClientRepository;
 use App\Repository\ThemesRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,10 +19,11 @@ class ThemesController extends AbstractController
     /**
      * @Route("/", name="themes_index", methods={"GET"})
      */
-    public function index(ThemesRepository $themesRepository): Response
+    public function index(ClientRepository $clientRepository,ThemesRepository $themesRepository): Response
     {
         return $this->render('themes/index.html.twig', [
             'themes' => $themesRepository->findAll(),
+            'clients' => $clientRepository->findAll(),
         ]);
     }
 

@@ -5,6 +5,8 @@ namespace App\Controller;
 use App\Entity\Client;
 use App\Form\ClientType;
 use App\Repository\ClientRepository;
+use App\Repository\PartieRepository;
+use PhpParser\Node\Expr\Array_;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -55,6 +57,16 @@ class ClientController extends AbstractController
     {
         return $this->render('client/show.html.twig', [
             'client' => $client,
+        ]);
+    }
+
+    /**
+     * @Route("/{id}/parties", name="client_parties", methods={"GET","POST"})
+     */
+    public function parties(Client $client, PartieRepository $partieRepository){
+        return $this->render('partie/index.html.twig', [
+            'parties' => $partieRepository->findByClient($client),
+            'clients' => $clientList = new Client(),
         ]);
     }
 

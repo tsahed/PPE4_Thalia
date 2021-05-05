@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Partie;
 use App\Form\PartieType;
+use App\Repository\ClientRepository;
 use App\Repository\PartieRepository;
 use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -19,10 +20,11 @@ class PartieController extends AbstractController
     /**
      * @Route("/", name="partie_index", methods={"GET"})
      */
-    public function index(PartieRepository $partieRepository): Response
+    public function index(ClientRepository $clientRepository,PartieRepository $partieRepository): Response
     {
         return $this->render('partie/index.html.twig', [
             'parties' => $partieRepository->findAll(),
+            'clients' => $clientRepository->findAll(),
         ]);
     }
 

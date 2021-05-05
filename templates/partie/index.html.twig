@@ -3,17 +3,25 @@
 {% block title %}Partie index{% endblock %}
 
 {% block body %}
-    <h1>Partie index</h1>
+
+    <h1 align="center">Choisir un joueur</h1>
+    <div align="center">
+{% if clients %}
+    {% for client in clients %}
+            <a href="/client/{{ client.id }}/parties"><button>{{ client.prenom }} {{ client.nom }} </button></a>
+    {% endfor %}
+{% endif %}
+    </div>
 
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>Partie</th>
                 <th>Jour</th>
-                <th>NbJoueurs</th>
-                <th>NbObstacles</th>
+                <th>Nombre de joueurs</th>
+                <th>Nombre d'obstacles</th>
                 <th>Reussite</th>
-                <th>actions</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>

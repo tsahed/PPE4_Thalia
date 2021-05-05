@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\PhotoClient;
 use App\Form\PhotoClientType;
+use App\Repository\ClientRepository;
 use App\Repository\PhotoClientRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,10 +19,11 @@ class PhotoClientController extends AbstractController
     /**
      * @Route("/", name="photo_client_index", methods={"GET"})
      */
-    public function index(PhotoClientRepository $photoClientRepository): Response
+    public function index(ClientRepository $clientRepository,PhotoClientRepository $photoClientRepository): Response
     {
         return $this->render('photo_client/index.html.twig', [
             'photo_clients' => $photoClientRepository->findAll(),
+            'clients' => $clientRepository->findAll(),
         ]);
     }
 

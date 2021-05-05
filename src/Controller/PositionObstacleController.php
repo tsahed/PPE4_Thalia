@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\PositionObstacle;
 use App\Form\PositionObstacleType;
+use App\Repository\ClientRepository;
 use App\Repository\PositionObstacleRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,10 +19,11 @@ class PositionObstacleController extends AbstractController
     /**
      * @Route("/", name="position_obstacle_index", methods={"GET"})
      */
-    public function index(PositionObstacleRepository $positionObstacleRepository): Response
+    public function index(ClientRepository $clientRepository,PositionObstacleRepository $positionObstacleRepository): Response
     {
         return $this->render('position_obstacle/index.html.twig', [
             'position_obstacles' => $positionObstacleRepository->findAll(),
+            'clients' => $clientRepository->findAll(),
         ]);
     }
 

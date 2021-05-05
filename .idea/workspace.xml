@@ -19,22 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06869bbc-3f9f-4e79-8103-a8d0caeb36de" name="Default Changelist" comment="home, reserv et rt">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_20_41__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_20_41__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="06869bbc-3f9f-4e79-8103-a8d0caeb36de" name="Default Changelist" comment="scripts modifiés">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210426151659.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210503124228.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210503124442.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210503214938.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210503215415.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AvisController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AvisController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ClientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ObstacleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ObstacleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PartieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PartieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PhotoClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PhotoClientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PositionObstacleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PositionObstacleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ReservationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ResultatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ResultatController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Salle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Salle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Themes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Themes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PartieType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PartieType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/resultat/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resultat/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/resultat/resultat.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resultat/res.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SalleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SalleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ThemesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ThemesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ClientRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ClientRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PartieRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PartieRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partie/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partie/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partie/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partie/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +133,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/resultat" />
@@ -198,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617376999991</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="scripts modifiés">
+      <created>1620202074509</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620202074509</updated>
+    </task>
+    <task id="LOCAL-00007" summary="scripts modifiés">
+      <created>1620202090553</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620202090553</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,9 +239,14 @@
     <MESSAGE value="ok" />
     <MESSAGE value="home ok" />
     <MESSAGE value="home, reserv et rt" />
-    <option name="LAST_COMMIT_MESSAGE" value="home, reserv et rt" />
+    <MESSAGE value="scripts modifiés" />
+    <option name="LAST_COMMIT_MESSAGE" value="scripts modifiés" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="442" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620206781232">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="442" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620206781232" />
     <state x="2636" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617374043767">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -232,10 +255,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2728" y="306" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617373147846" />
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620054501486">
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620204446827">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620054501486" />
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620204446827" />
     <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1617366146522">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -256,13 +279,13 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617375148884" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617377033269">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1620202100632">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617377033269" />
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620042161759">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620202100632" />
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620206527108">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620042161759" />
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620206527108" />
   </component>
 </project>

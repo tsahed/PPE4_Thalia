@@ -2,6 +2,7 @@
 
 namespace App\Repository;
 
+use App\Entity\Client;
 use App\Entity\Partie;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
@@ -17,6 +18,15 @@ class PartieRepository extends ServiceEntityRepository
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Partie::class);
+    }
+    public function findByClient(Client $client)
+    {
+        return $this->createQueryBuilder('p')
+            ->andWhere(':value MEMBER OF p.client')
+            ->setParameter('value', $client)
+            ->getQuery()
+            ->getResult()
+            ;
     }
 
     // /**

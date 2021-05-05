@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Avis;
 use App\Form\AvisType;
 use App\Repository\AvisRepository;
+use App\Repository\ClientRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,10 +19,11 @@ class AvisController extends AbstractController
     /**
      * @Route("/", name="avis_index", methods={"GET"})
      */
-    public function index(AvisRepository $avisRepository): Response
+    public function index(ClientRepository $clientRepository,AvisRepository $avisRepository): Response
     {
         return $this->render('avis/index.html.twig', [
             'avis' => $avisRepository->findAll(),
+            'clients' => $clientRepository->findAll(),
         ]);
     }
 
