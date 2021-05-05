@@ -12,10 +12,10 @@ class PartieType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('salle')
             ->add('jour')
             ->add('nbJoueurs')
             ->add('nbObstacles')
-            ->add('reussite')
         ;
     }
 

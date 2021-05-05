@@ -6,16 +6,35 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af769746-75de-4660-908f-5ae22f5633b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/reservation/reservation.html.twig" afterDir="false" />
+    <list default="true" id="06869bbc-3f9f-4e79-8103-a8d0caeb36de" name="Default Changelist" comment="home, reserv et rt">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_20_41__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_20_41__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210426151659.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210503124228.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210503124442.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210503214938.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210503215415.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PartieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PartieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ResultatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ResultatController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Salle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Salle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Themes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Themes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/PartieType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PartieType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/resultat/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resultat/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/resultat/resultat.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resultat/resultat.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/resultat/resultat.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resultat/res.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +137,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Thalia\PPE4_Thalia\templates" />
+      <recent name="D:\Thalia\PPE4_Thalia\templates\resultat" />
+      <recent name="D:\Thalia\PPE4_Thalia" />
+      <recent name="D:\Thalia\PPE4_Thalia\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Thalia\PPE4_Thalia\templates\resultat" />
       <recent name="D:\Thalia\PPE4_Thalia\templates\reservation" />
       <recent name="D:\Thalia\PPE4_Thalia\templates\home" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Thalia\PPE4_Thalia" />
-      <recent name="D:\Thalia\PPE4_Thalia\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -139,7 +160,8 @@
       <workItem from="1616770678218" duration="2261000" />
       <workItem from="1617366114175" duration="40000" />
       <workItem from="1617366281696" duration="7034000" />
-      <workItem from="1617375167528" duration="1365000" />
+      <workItem from="1617375167528" duration="1486000" />
+      <workItem from="1620041981869" duration="10349000" />
     </task>
     <task id="LOCAL-00001" summary="crud">
       <created>1616770841277</created>
@@ -169,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617375533671</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="home, reserv et rt">
+      <created>1617376999991</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617376999991</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,14 +232,18 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2728" y="306" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617373147846" />
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617368330480">
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620054501486">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617368330480" />
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620054501486" />
     <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1617366146522">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617366146522" />
+    <state x="2673" y="387" key="Github.CreatePullRequestDialog" timestamp="1620042127119">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2673" y="387" key="Github.CreatePullRequestDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620042127119" />
     <state x="2683" y="243" key="NewPhpClassDialog" timestamp="1617373117329">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -223,9 +256,13 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617375148884" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617375540509">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617377033269">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617375540509" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617377033269" />
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620042161759">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620042161759" />
   </component>
 </project>

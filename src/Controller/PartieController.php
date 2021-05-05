@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Partie;
 use App\Form\PartieType;
 use App\Repository\PartieRepository;
+use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -31,6 +32,7 @@ class PartieController extends AbstractController
     public function new(Request $request): Response
     {
         $partie = new Partie();
+        $partie->setJour(new datetime());
         $form = $this->createForm(PartieType::class, $partie);
         $form->handleRequest($request);
 

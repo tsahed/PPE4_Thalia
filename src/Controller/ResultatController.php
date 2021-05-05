@@ -22,11 +22,11 @@ class ResultatController extends AbstractController
     }
 
     /**
-     * @Route("/", name="resultat_p2", methods={"GET"})
+     * @Route("/", name="res_p2", methods={"GET"})
      */
-    public function resultat_p2(): Response
+    public function res_p2(): Response
     {
-        return $this->render('resultat/resultat.html.twig', [
+        return $this->render('resultat/res.html.twig', [
         ]);
     }
 }

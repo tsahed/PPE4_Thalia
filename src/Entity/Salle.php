@@ -35,14 +35,10 @@ class Salle
     private $Avis;
 
     /**
-     * @ORM\OneToMany(targetEntity=Themes::class, mappedBy="salle")
+     * @ORM\ManyToOne(targetEntity=Themes::class)
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $themes;
-
-    public function __construct()
-    {
-        $this->themes = new ArrayCollection();
-    }
+    private $theme;
 
     public function getId(): ?int
     {
@@ -85,32 +81,18 @@ class Salle
         return $this;
     }
 
-    /**
-     * @return Collection|Themes[]
-     */
-    public function getThemes(): Collection
-    {
-        return $this->themes;
+    public function __toString(){
+        return $this->ville . " - " . $this->theme;
     }
 
-    public function addTheme(Themes $theme): self
+    public function getTheme(): ?Themes
     {
-        if (!$this->themes->contains($theme)) {
-            $this->themes[] = $theme;
-            $theme->setSalle($this);
-        }
-
-        return $this;
+        return $this->theme;
     }
 
-    public function removeTheme(Themes $theme): self
+    public function setTheme(?Themes $theme): self
     {
-        if ($this->themes->removeElement($theme)) {
-            // set the owning side to null (unless already changed)
-            if ($theme->getSalle() === $this) {
-                $theme->setSalle(null);
-            }
-        }
+        $this->theme = $theme;
 
         return $this;
     }

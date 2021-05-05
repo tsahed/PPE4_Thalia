@@ -5,13 +5,14 @@
 {% block body %}
     <div>
         <ul class="list-group list-group-flush">
-            <a href="{{ path('resultat_p2') }}"><button type="button" class="list-group-item list-group-item-action">Partie 0</button></a>
-            <button type="button" class="list-group-item list-group-item-action">Partie 1</button>
-            <button type="button" class="list-group-item list-group-item-action">Partie 2</button>
-            <button type="button" class="list-group-item list-group-item-action">Partie 3</button>
-            <button type="button" class="list-group-item list-group-item-action">Partie 4</button>
+            {% for partie in partie %}
+                <a class="dropdown-item" href="/partie/{{ partie.id }}">
+                    <button type="button" class="list-group-item list-group-item-action">
+                    {{ salle.ville }} / {{ theme.theme }} le {{ partie.jour }}
+                    </button>
+                </a>
+            {% endfor %}
         </ul>
     </div>
-
 
 {% endblock %}
