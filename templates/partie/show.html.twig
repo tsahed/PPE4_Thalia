@@ -4,12 +4,14 @@
 
 {% block body %}
 
-    <h1>Partie</h1>
+    <div align="center">
+    <h1>Détails de la partie</h1>
+    </div>
 
     <table class="table">
         <tbody>
             <tr>
-                <th>Id</th>
+                <th>Partie</th>
                 <td>{{ partie.id }}</td>
             </tr>
             <tr>
@@ -17,23 +19,21 @@
                 <td>{{ partie.jour ? partie.jour|date('Y-m-d H:i:s') : '' }}</td>
             </tr>
             <tr>
-                <th>NbJoueurs</th>
+                <th>Nombre de joueurs</th>
                 <td>{{ partie.nbJoueurs }}</td>
             </tr>
             <tr>
-                <th>NbObstacles</th>
+                <th>Nombre d'obstacles</th>
                 <td>{{ partie.nbObstacles }}</td>
             </tr>
             <tr>
                 <th>Reussite</th>
-                <td>{{ partie.reussite ? 'Yes' : 'No' }}</td>
+                <td>{{ partie.reussite ? 'Oui' : 'Non' }}</td>
             </tr>
         </tbody>
     </table>
 
-    <a href="{{ path('partie_index') }}">back to list</a>
-
-    <a href="{{ path('partie_edit', {'id': partie.id}) }}">edit</a>
-
-    {{ include('partie/_delete_form.html.twig') }}
+    <div align="center">
+        <a href="{{ path('partie_index') }}"><button>Retour aux choix de joueurs</button></a>
+    </div>
 {% endblock %}

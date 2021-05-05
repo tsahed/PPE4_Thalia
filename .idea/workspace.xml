@@ -19,23 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06869bbc-3f9f-4e79-8103-a8d0caeb36de" name="Default Changelist" comment="scripts modifiés">
+    <list default="true" id="06869bbc-3f9f-4e79-8103-a8d0caeb36de" name="Default Changelist" comment="resultat a finir, faire reservation">
+      <change afterPath="$PROJECT_DIR$/templates/client/partie.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AvisController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AvisController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ObstacleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ObstacleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PartieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PartieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PhotoClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PhotoClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PositionObstacleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PositionObstacleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ReservationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ResultatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ResultatController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SalleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SalleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ThemesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ThemesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ClientRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ClientRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/PartieRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PartieRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/partie/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partie/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/partie/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partie/show.html.twig" afterDir="false" />
     </list>
@@ -166,6 +153,7 @@
       <workItem from="1617366281696" duration="7034000" />
       <workItem from="1617375167528" duration="1486000" />
       <workItem from="1620041981869" duration="10349000" />
+      <workItem from="1620222081146" duration="5422000" />
     </task>
     <task id="LOCAL-00001" summary="crud">
       <created>1616770841277</created>
@@ -216,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620202090553</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="resultat a finir, faire reservation">
+      <created>1620208795746</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620208795746</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +235,8 @@
     <MESSAGE value="home ok" />
     <MESSAGE value="home, reserv et rt" />
     <MESSAGE value="scripts modifiés" />
-    <option name="LAST_COMMIT_MESSAGE" value="scripts modifiés" />
+    <MESSAGE value="resultat a finir, faire reservation" />
+    <option name="LAST_COMMIT_MESSAGE" value="resultat a finir, faire reservation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="442" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620206781232">
@@ -279,13 +275,18 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617375148884" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1620202100632">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1620208804628">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620208804628" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620202100632" />
     <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620206527108">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620206527108" />
+    <state x="2543" y="225" key="search.everywhere.popup" timestamp="1620224348090">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620224348090" />
   </component>
 </project>

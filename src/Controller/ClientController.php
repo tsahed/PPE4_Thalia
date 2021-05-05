@@ -64,7 +64,7 @@ class ClientController extends AbstractController
      * @Route("/{id}/parties", name="client_parties", methods={"GET","POST"})
      */
     public function parties(Client $client, PartieRepository $partieRepository){
-        return $this->render('partie/index.html.twig', [
+        return $this->render('client/partie.html.twig', [
             'parties' => $partieRepository->findByClient($client),
             'clients' => $clientList = new Client(),
         ]);
