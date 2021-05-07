@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\PositionObstacle;
+use App\Entity\Partie;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -17,6 +18,15 @@ class PositionObstacleRepository extends ServiceEntityRepository
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, PositionObstacle::class);
+    }
+    public function findByPartie(Partie $partie)
+    {
+        return $this->createQueryBuilder('p')
+            ->andWhere(':value MEMBER OF p.partie')
+            ->setParameter('value', $partie)
+            ->getQuery()
+            ->getResult()
+            ;
     }
 
     // /**

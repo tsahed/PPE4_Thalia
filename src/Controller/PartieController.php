@@ -6,6 +6,7 @@ use App\Entity\Partie;
 use App\Form\PartieType;
 use App\Repository\ClientRepository;
 use App\Repository\PartieRepository;
+use App\Repository\PositionObstacleRepository;
 use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -25,13 +26,14 @@ class PartieController extends AbstractController
         return $this->render('partie/index.html.twig', [
             'parties' => $partieRepository->findAll(),
             'clients' => $clientRepository->findAll(),
+
         ]);
     }
 
     /**
      * @Route("/new", name="partie_new", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+    public function new(Request $request, PositionObstacleRepository $positionobstacleRepository): Response
     {
         $partie = new Partie();
         $partie->setJour(new datetime());
@@ -49,6 +51,7 @@ class PartieController extends AbstractController
         return $this->render('partie/new.html.twig', [
             'partie' => $partie,
             'form' => $form->createView(),
+            'positionobstacle' => $positionobstacleRepository->findAll(),
         ]);
     }
 

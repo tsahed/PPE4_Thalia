@@ -13,9 +13,6 @@
         <tr>
             <th>Partie</th>
             <th>Jour</th>
-            <th>Nombre de joueurs</th>
-            <th>Nombre d'obstacles</th>
-            <th>Reussite</th>
             <th></th>
         </tr>
         </thead>
@@ -24,9 +21,6 @@
             <tr>
                 <td>{{ partie.id }}</td>
                 <td>{{ partie.jour ? partie.jour|date('Y-m-d H:i:s') : '' }}</td>
-                <td>{{ partie.nbJoueurs }}</td>
-                <td>{{ partie.nbObstacles }}</td>
-                <td>{{ partie.reussite ? 'Yes' : 'No' }}</td>
                 <td>
                     <a href="{{ path('partie_show', {'id': partie.id}) }}">Consulter les détails de la partie</a>
                 </td>
