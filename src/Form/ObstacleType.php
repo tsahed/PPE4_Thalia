@@ -13,10 +13,6 @@ class ObstacleType extends AbstractType
     {
         $builder
             ->add('nom')
-            ->add('photo')
-            ->add('typeObstacle')
-            ->add('echec')
-            ->add('tempsPassage')
         ;
     }
 

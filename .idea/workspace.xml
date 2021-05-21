@@ -6,16 +6,32 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af769746-75de-4660-908f-5ae22f5633b5" name="Default Changelist" comment="formulaires ok, insertion donnée a faire et ouvertures page methode">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_20_41_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_20_41__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="06869bbc-3f9f-4e79-8103-a8d0caeb36de" name="Default Changelist" comment="resultat a finir, faire reservation">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2021_08_06_[Default_Changelist]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2021_08_06__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_05_2021_00_43_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_05_2021_00_43__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PartieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PartieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Obstacle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Obstacle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ObstacleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ObstacleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/obstacle/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/obstacle/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/obstacle/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/obstacle/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/obstacle/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/obstacle/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/obstacle/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/obstacle/new.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,12 +127,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/resultat" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="vue.rearranger.settings.migration" value="true" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -125,6 +141,8 @@
       <recent name="D:\Thalia\PPE4_Thalia\templates\home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Thalia\PPE4_Thalia\templates" />
+      <recent name="D:\Thalia\PPE4_Thalia\templates\resultat" />
       <recent name="D:\Thalia\PPE4_Thalia" />
       <recent name="D:\Thalia\PPE4_Thalia\src" />
     </key>
@@ -140,7 +158,11 @@
       <workItem from="1616770678218" duration="2261000" />
       <workItem from="1617366114175" duration="40000" />
       <workItem from="1617366281696" duration="7034000" />
-      <workItem from="1617375167528" duration="1365000" />
+      <workItem from="1617375167528" duration="1486000" />
+      <workItem from="1620041981869" duration="10349000" />
+      <workItem from="1620222081146" duration="5511000" />
+      <workItem from="1620367905011" duration="10597000" />
+      <workItem from="1620389678065" duration="2693000" />
     </task>
     <task id="LOCAL-00001" summary="crud">
       <created>1616770841277</created>
@@ -170,7 +192,42 @@
       <option name="project" value="LOCAL" />
       <updated>1617375533671</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="home, reserv et rt">
+      <created>1617376999991</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617376999991</updated>
+    </task>
+    <task id="LOCAL-00006" summary="scripts modifiés">
+      <created>1620202074509</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620202074509</updated>
+    </task>
+    <task id="LOCAL-00007" summary="scripts modifiés">
+      <created>1620202090553</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620202090553</updated>
+    </task>
+    <task id="LOCAL-00008" summary="resultat a finir, faire reservation">
+      <created>1620208795746</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620208795746</updated>
+    </task>
+    <task id="LOCAL-00009" summary="resultat a finir, faire reservation">
+      <created>1620227890937</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1620227890937</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,9 +250,15 @@
     <MESSAGE value="ok" />
     <MESSAGE value="home ok" />
     <MESSAGE value="home, reserv et rt" />
-    <option name="LAST_COMMIT_MESSAGE" value="home, reserv et rt" />
+    <MESSAGE value="scripts modifiés" />
+    <MESSAGE value="resultat a finir, faire reservation" />
+    <option name="LAST_COMMIT_MESSAGE" value="resultat a finir, faire reservation" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="442" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620206781232">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="442" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620206781232" />
     <state x="2636" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617374043767">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -204,14 +267,18 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2728" y="306" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617373147846" />
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617368330480">
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620373308670">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617368330480" />
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620373308670" />
     <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1617366146522">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617366146522" />
+    <state x="2673" y="387" key="Github.CreatePullRequestDialog" timestamp="1620042127119">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2673" y="387" key="Github.CreatePullRequestDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620042127119" />
     <state x="2683" y="243" key="NewPhpClassDialog" timestamp="1617373117329">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -220,13 +287,22 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2714" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617367176263" />
-    <state x="2381" y="165" key="SettingsEditor" timestamp="1617375148884">
+    <state x="2381" y="165" key="SettingsEditor" timestamp="1621607875418">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617375148884" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617375540509">
+    <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621607875418" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1620227898302">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617375540509" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620208804628" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620227898302" />
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620206527108">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620206527108" />
+    <state x="2543" y="225" key="search.everywhere.popup" timestamp="1620224348090">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620224348090" />
   </component>
 </project>

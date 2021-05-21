@@ -1,11 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Obstacle{% endblock %}
+{% block title %}Réservation{% endblock %}
 
 {% block body %}
-    <h1>Create new Obstacle</h1>
+    <div align="center">
+    <h1>Enregistrer un obstacle</h1>
 
     {{ include('obstacle/_form.html.twig') }}
 
-    <a href="{{ path('obstacle_index') }}">back to list</a>
+
+    <a href="{{ path('obstacle_index') }}">Voir la liste des obstacles</a>
+    </div>
 {% endblock %}
